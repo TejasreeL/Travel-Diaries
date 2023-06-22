@@ -1,0 +1,49 @@
+Project Name:
+Odyssey
+
+Team Members:
+Gowshika J - @Gowshika
+Upasna Singh - @Upasna020
+Tejasree - 
+Ritu Kansal - 
+
+Problem Statement:
+Making travel plans with a group has always
+been difficult to coordinate with and a lot of
+travel memories often get lost in time or are
+scattered among different platforms.
+
+Features:
+    - Create Groups and Schedule Trips
+    - Chat section
+        - Budgeting
+        - Bucket list
+     - Memories section
+        - Post Pictures
+        - Journal/write notes about your Trip
+    - Annual reminders of past trips
+    - Book hotels / holiday packages / car
+    rentals.
+
+Techstack:
+    - Frontend
+        - html
+        - css
+        - JavaScript
+    - Backend
+        - Django
+    - Database
+        - MySQL
+    - APIs
+        - Travelopros API
+        - Google Maps API
+        - ActualBudget’s Budget API
+
+Future Scope:
+    - Extend to desktop and androis/iOS applications.
+
+Status: Ideation
+
+@shifu We request your approval for this project idea
+
+
