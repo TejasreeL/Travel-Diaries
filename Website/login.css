@@ -1,0 +1,53 @@
+
+.bg{
+  background: url("https://blog.prefertrip.com/wp-content/uploads/2016/02/Planning-a-Perfect-Truly-Enjoyable-Holiday.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 20px;
+}
+
+main{
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1{
+  background: #d0d0d0;
+  display:inline;
+  padding: 6px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form{
+  margin: auto;
+  background: #04f082b6;
+  width: 25%;
+  height: 34vh;
+  padding: 20px;
+  text-align: center;
+}
+
+input{
+  background: #ffffff;
+  height: 20px;
+  width: 90%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.common{
+  margin: 8px;
+  font-size: 20px;
+}
+
+.login{
+  text-align: center;
+  margin: 15px;
+}
+
+.forms{
+  text-align: left;
+}
