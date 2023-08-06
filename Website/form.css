@@ -12,13 +12,6 @@
   color: #00056c;
 }
 
-main{
-  display: flex;
-  height: 60vh;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 h1{
   text-align: center;
   color: #000000;
@@ -31,14 +24,12 @@ form{
   margin: auto;
   background: #04f082c1;
   width: 25%;
-  height: 75%;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
 }
 
-input{
-  background: #ffffff;
+input, select{
   height: 20px;
   width: 90%;
   padding: 10px;
@@ -49,7 +40,7 @@ input{
 
 .common{
   margin: 8px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .login{
@@ -85,4 +76,8 @@ p{
 button:hover{
   background: #1692cb;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.inline{
+  display: inline;
 }
