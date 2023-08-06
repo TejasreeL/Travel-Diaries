@@ -5,18 +5,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Poppins:wght@200;300&display=swap');
 
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .bg{
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 20px;
+  background-attachment: fixed;
   color: #00056c;
 }
 
-h1{
+img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
   text-align: center;
+}
+
+h1{
   color: #000000;
   font-size: 44px;
-  padding: 6px;
   font-family: 'Poppins', sans-serif;
 }
 
