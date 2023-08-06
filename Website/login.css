@@ -81,3 +81,8 @@ p{
   padding: 0px;
   margin: 2px;
 }
+
+button:hover{
+  background: #1692cb;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
