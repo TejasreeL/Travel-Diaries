@@ -183,12 +183,6 @@ body{
 }
 
 /**footer-links**/
-.foot-links{
-    /* display: flex; */
-    /* justify-content: space-evenly;
-    align-items: center; */
-    height: 20vw;
-}
 .foot-link-box{
     display: grid;
     flex-direction: column;
