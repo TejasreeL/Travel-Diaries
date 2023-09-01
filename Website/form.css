@@ -17,7 +17,7 @@ header{
   background-size: 100%;
   padding: 20px;
   background-attachment: fixed;
-  color: #00056c;
+  color: #ffffff;
 }
 
 img{
@@ -28,14 +28,14 @@ img{
 }
 
 h1{
-  color: #000000;
+  color: #ffffff;
   font-size: 44px;
   font-family: 'Poppins', sans-serif;
 }
 
 form{
   margin: auto;
-  background: #04f082c1;
+  background: #000000;
   width: 25%;
   padding: 20px;
   text-align: center;
@@ -67,8 +67,8 @@ input, select{
 
 button{
   cursor: pointer;
-  background-color: #16a2e3;
-  color: #00056c;
+  background-color: #ffffff;
+  color: #4a52e6;
   border: none;
   padding: 6px 14px 6px 14px;
   margin: 5px 25px 0px 0px;
@@ -87,7 +87,7 @@ p{
 }
 
 button:hover{
-  background: #1692cb;
+  background: #f6fafb;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
