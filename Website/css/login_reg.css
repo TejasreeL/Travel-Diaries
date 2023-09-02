@@ -1,0 +1,96 @@
+
+*{
+  font-family: sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Poppins:wght@200;300&display=swap');
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.bg{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 20px;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+h1{
+  color: #ffffff;
+  font-size: 44px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form{
+  margin: auto;
+  background: #39393c;
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+input, select{
+  height: 20px;
+  width: 90%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.common{
+  margin: 8px;
+  font-size: 16px;
+}
+
+.login{
+  text-align: center;
+  margin: 15px;
+}
+
+.forms{
+  text-align: left;
+}
+
+button{
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #4a52e6;
+  border: none;
+  padding: 6px 14px 6px 14px;
+  margin: 5px 25px 0px 0px;
+  font-size: 16px;
+  border-radius: 7px;
+}
+
+.right{
+  text-align: right;
+}
+
+p{
+  font-size: 15px;
+  padding: 0px;
+  margin: 2px;
+}
+
+button:hover{
+  background: #f6fafb;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.inline{
+  display: inline;
+}
