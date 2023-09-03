@@ -47,6 +47,28 @@ body{
     color: #4c173b !important;
     /* transition-duration: 3s; */
 }
+.custom-btn{
+    background-color:white;
+    text-align: center;
+    border-radius: 10%;
+    margin-left: 100px;
+}
+.custom-btn a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.7vw;
+
+}
+.custom-btn:hover{
+    background-color: #393e46;
+    transition-duration: 80ms;
+    transition-timing-function: ease-in-out;
+    transition-property: all;    
+}
+.custom-btn a:hover{
+    font-weight: 600;
+    color: aliceblue !important;
+}
 
 /* TITLE SECTION */
 
