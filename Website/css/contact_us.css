@@ -22,12 +22,14 @@ body::after {
 }
 
 section {
-    position: relative;
-    z-index: 3;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 .container {
     max-width: 1080px;
     margin-left: auto;
@@ -39,12 +41,13 @@ section {
 
 .section-header {
     margin-bottom: 50px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .section-header h2{
     font-size: 3em;
     color: pink;
+    /* color: #c34c76; */
     font-weight: bold;
     margin-bottom: 20px;
 }
