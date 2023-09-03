@@ -25,7 +25,7 @@ Travel Diaries is a web-based platform that allows travelers to document and sha
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Django
 - **Database**: MySql
-- **Authentication**: Passport.js or Firebase Authentication
+- **Authentication**: Passport.js or Firebase Authentication(Still figuring out)
 - **Cloud Storage**: Still figuring out (Amazon S3 or Google Cloud Storage (for photo uploads) most probably)
 - **Mapping**: Integration with Google Maps API for geotagging ( a future prospect)
 
