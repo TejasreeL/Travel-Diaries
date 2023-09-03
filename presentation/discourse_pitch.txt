@@ -4,21 +4,22 @@ Odyssey
 Team Members:
 Gowshika J - @Gowshika
 Upasna Singh - @Upasna020
-Tejasree - 
-Ritu Kansal - 
+Tejasree Lokireddy - @Tejasree
+Ritu Kansal - @gamechanger 
 
 Problem Statement:
-Making travel plans with a group has always
-been difficult to coordinate with and a lot of
-travel memories often get lost in time or are
-scattered among different platforms.
+Making travel plans with a group has always been difficult to coordinate with and a lot of travel memories often get lost in time or are scattered among different platforms.
+
+Solution:
+Our web application is a one-stop solution to make travelling effortless. The main objective is to plan travel and cherish its memories.
 
 Features:
     - Create Groups and Schedule Trips
     - Chat section
         - Budgeting
         - Bucket list
-     - Memories section
+    - Status of trip
+    - Memories section
         - Post Pictures
         - Journal/write notes about your Trip
     - Annual reminders of past trips
@@ -40,9 +41,7 @@ Techstack:
         - ActualBudget’s Budget API
 
 Future Scope:
-    - Extend to desktop and androis/iOS applications.
-
-Status: Ideation
+    - Extend to desktop and android/iOS applications.
 
 @shifu We request your approval for this project idea
 
