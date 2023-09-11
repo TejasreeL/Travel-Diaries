@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>User Interface</title>
-    <link href="./css/userinterface.css" rel="stylesheet">
+    <link href="./css/user_home.css" rel="stylesheet">
   </head>
   
   <body background="./images/home_pg/title/title(1).jpg" class="bg">
@@ -24,7 +24,9 @@
       </div>
       <div class="trips">
         <div class="options">
-          <p>Add Trip</p>
+          <dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">  
+          <p id="addtrip">Add Trip</p>
+          <button id="hide">Close</button>
           <p>Friends</p>
           <p>Dream Destinations</p>
         </div>
@@ -36,5 +38,17 @@
           <p></p>
         </div>
     </main>
+
+<script type="text/JavaScript">  
+  (function() {    
+      var dialog = document.getElementById('myFirstDialog');    
+      document.getElementById('addtrip').onclick = function() {    
+          dialog.show();    
+      };    
+      document.getElementById('hide').onclick = function() {    
+          dialog.close();    
+      };    
+  })();   
+  </script>  
   </body>
 </html>
