@@ -13,7 +13,7 @@
             <li><img src="./images/user-circle.png" class="user">Person name</li>
         </ul></h2>
         <ul>
-            <li><a href="#"><img src="./images/home-solid.png"></a></li>
+            <li><a href="user_home.html"><img src="./images/home-solid.png"></a></li>
             <li><a href=#><img src="./images/settings.png"></a></li>
             <li><a href="home_pg.html"><img src="./images/logo/logo.png" width="35px"></a></li>
         </ul>
@@ -24,9 +24,50 @@
       </div>
       <div class="trips">
         <div class="options">
-          <dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">  
-          <p id="addtrip">Add Trip</p>
-          <button id="hide">Close</button>
+          <div>  
+            <dialog id="myFirstDialog">  
+            <h2>Add Trip</h2>
+            <form>
+              <div class="forms">
+                <div>
+                  <label for=tripname> Trip name: </label><br>
+                  <input type=text name=tripname id=tripname>
+                </div>
+                <div>
+                  <label for="friends">Add friends:</label><br>
+                  <select name="friends" id="friends">
+                    <option value="" disabled selected hidden>Choose from friends</option>
+                  </select>
+                </div>
+              </div> <br>
+              <div class="forms">
+                <div>
+                  <label for=startloc> Starting location </label><br>
+                  <input type=text name=startloc id=startloc>
+                </div>
+                <div>
+                  <label for=destination> Destination </label><br>
+                  <input type=text name=destination id=destination>
+                </div>
+              </div> <br>
+              <div class="forms">
+                <div>
+                  <div><label for=dob> From date </label></div>
+                  <div><input type=date name=fromdate id=fromdate></div>
+                </div>
+                <div>
+                  <div><label for=dob> To date </label></div>
+                  <div><input type=date name=todate id=todate></div>
+                </div>
+              </div>
+            </form><br><br>
+            <div class="right">
+              <a href="trip_chat.html"><button>Add</button></a>
+              <button id="hide">Cancel</button>
+            </div>  
+            </dialog>  
+            <p id="show">Add Trips</p>  
+            </div>              
           <p>Friends</p>
           <p>Dream Destinations</p>
         </div>
@@ -37,18 +78,21 @@
           <p></p>
           <p></p>
         </div>
+      </div>
     </main>
 
-<script type="text/JavaScript">  
-  (function() {    
-      var dialog = document.getElementById('myFirstDialog');    
-      document.getElementById('addtrip').onclick = function() {    
-          dialog.show();    
-      };    
-      document.getElementById('hide').onclick = function() {    
-          dialog.close();    
-      };    
-  })();   
-  </script>  
+    <script type="text/JavaScript">  
+      (function() {    
+          var dialog = document.getElementById('myFirstDialog');    
+          document.getElementById('show').onclick = function() {    
+              dialog.show();    
+          };    
+          document.getElementById('hide').onclick = function() {    
+              dialog.close();    
+          };    
+      })();   
+      </script>  
   </body>
+
+
 </html>
