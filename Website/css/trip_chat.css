@@ -53,10 +53,10 @@ html,body{
 }
 
 #working_space{
-    width: 75%;
-    height: 85%;
+    width: 80%;
+    height: 95%;
     background-color: rgb(161, 96, 157);
-    position: absolute;
+    position: relative;
     margin: 25px;
     border-radius: 20px;
     padding: 10px;
@@ -64,10 +64,10 @@ html,body{
     align-items: center;
 }
 #chat{
-    width: 90%;
-    height: 85%;
+    width: 92%;
+    height: 78%;
     background-color: whitesmoke;
-    position: relative;
+    position: absolute;
     margin: 25px;
     border-radius: 20px;
     padding: 10px;
@@ -76,8 +76,9 @@ html,body{
 }
 
 #sub_title{
-    font-size: 3.5vw;
+    font-size: 2.0vw;
     font-weight: bolder;
+    text-align: center;
     color: whitesmoke;
     padding-left: 2%;
 
