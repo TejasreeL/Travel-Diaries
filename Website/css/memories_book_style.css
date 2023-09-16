@@ -63,6 +63,7 @@ main {
     background-size: cover;
     display: flex;
     height: 88%;
+    width: 100vw;
     padding: 30px;
     /* border: 12px solid purple; */
     gap: 100px;
@@ -121,6 +122,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0.5rem 0.5rem 0.4em #9c9090, -0.5em -0rem .4em #9c9090;
 }
 
 .button p {
@@ -128,7 +130,7 @@ main {
 }
 
 .button:hover {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     cursor: pointer;
 }
 
