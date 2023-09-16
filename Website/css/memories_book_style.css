@@ -1,0 +1,132 @@
+* {
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+
+.full-page {
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid blue; */
+    background-color: antiquewhite;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 12%;
+    /* border: 2px solid red; */
+    background-color: rgb(161, 96, 157);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    padding: 15px;
+
+}
+
+.trip-name {
+    height: 100%;
+    /* border: 2px solid purple; */
+    font-family: 'Poppins', sans-serif;
+    width: 85%;
+    text-align: left;
+    color: antiquewhite;
+    margin-left: 20px;
+}
+
+.nav-icon {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    /* border: 2px solid gold; */
+    justify-content: center;
+    gap: 30px;
+}
+
+.home {
+    height: 100%;
+    /* border: 2px solid green; */
+}
+
+.settings {
+    height: 100%;
+    /* border: 2px solid orange */
+}
+
+.fa-solid:hover {
+    color: rgb(59, 56, 56);
+    font-size: 2.3rem;
+}
+
+main {
+    display: flex;
+    height: 88%;
+    padding: 30px;
+    /* border: 12px solid purple; */
+    gap: 100px;
+
+}
+
+.diary-page {
+    /* border: 2px solid green; */
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(161, 96, 157);
+}
+
+.panel {
+    /* border: 2px solid orange; */
+    height: 100%;
+    width: 25%;
+    border-radius: 20px;
+    background-color: rgb(161, 96, 157);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+}
+
+.sub-panel {
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    gap: 13px;
+}
+
+.p1 {
+    height: 60%;
+}
+
+.p2 {
+    height: 40%;
+}
+
+.button {
+    height: 30px;
+    width: 80%;
+    background-color: #d9d9d9;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button p {
+    font-weight: bold;
+}
+
+.button p:hover {
+    font-size: 1.15rem;
+}
+
+
+
