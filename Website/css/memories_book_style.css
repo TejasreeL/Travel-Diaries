@@ -55,6 +55,7 @@
 .fa-solid:hover {
     color: rgb(59, 56, 56);
     font-size: 2.3rem;
+    cursor: pointer;
 }
 
 main {
@@ -126,8 +127,9 @@ main {
     font-weight: bold;
 }
 
-.button p:hover {
+.button:hover {
     font-size: 1.15rem;
+    cursor: pointer;
 }
 
 
