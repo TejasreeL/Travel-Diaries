@@ -8,7 +8,7 @@
     width: 100vw;
     height: 100vh;
     /* border: 2px solid blue; */
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 .nav-bar {
@@ -58,12 +58,14 @@
 }
 
 main {
+    background-image: url("../images/home_pg/title/title\(1\).jpg");
+    background-size: cover;
     display: flex;
     height: 88%;
     padding: 30px;
     /* border: 12px solid purple; */
     gap: 100px;
-
+    
 }
 
 .diary-page {
