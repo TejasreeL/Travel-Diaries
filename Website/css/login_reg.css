@@ -77,7 +77,9 @@ button{
 }
 
 .right{
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
 }
 
 p{
@@ -93,4 +95,8 @@ button:hover{
 
 .inline{
   display: inline;
+}
+
+.co{
+  color: #0057fa;
 }
