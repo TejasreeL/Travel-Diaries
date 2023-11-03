@@ -1,0 +1,242 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* overflow-x: hidden; */
+}
+
+html {
+    width: 100vw;
+}
+body{
+    text-align: center;
+    background-color: black;
+    width: 100%;
+}
+
+/* NAVBAR */
+
+.navbar{
+    /* background-color: rgba(246, 96, 149,0.8); */
+    background-color: rgb(161, 96, 157);
+    
+    background-image: linear-gradient(to right,#c34c76);
+    /* background-image: linear-gradient(to right,#c34c76, #f66095, #ffa9bc, #ffa9bc,); */
+    padding-left: 30.5vw;
+    
+}
+
+.logo-img{
+    background-image: url("/static/logo/logo.png");
+    background-size: cover;
+    height: 6rem;
+    width: 8rem;
+    transition: transform 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.logo-img:hover{
+    transform: rotateY(360deg);
+}
+
+.custom-link{
+    /* color: rgb(102, 28, 86); */
+    font-weight: 500;
+    margin-left: 3rem;
+    font-size:larger;
+}
+
+.custom-link:hover{
+    /* text-decoration-line: underline; */
+    font-weight: 900;
+    transform: scale(1.057);
+    /* color: rgb(102, 28, 86) !important; */
+    color: #4c173b !important;
+    /* transition-duration: 3s; */
+}
+.custom-btn{
+    background-color:white;
+    text-align: center;
+    border-radius: 10%;
+    margin-left: 100px;
+}
+.custom-btn a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.7vw;
+
+}
+.custom-btn:hover{
+    background-color: #393e46;
+    transition-duration: 80ms;
+    transition-timing-function: ease-in-out;
+    transition-property: all;    
+}
+.custom-btn a:hover{
+    font-weight: 600;
+    color: aliceblue !important;
+}
+
+/* TITLE SECTION */
+
+a {
+    text-decoration: none;
+}
+
+.title{
+    /* text-align: center; */
+    /* color: #393e46; */
+    color: white;
+    padding: 0px;
+}
+.title-box{
+    position: relative;
+    width: 100%;
+    
+}
+.title-img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    
+}
+.title-text{
+    /* position: absolute;
+    top: 40% !important;
+    left: 50%;
+    transform : translate(-50%, -50%); */
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.title-heading{
+    font-size: 3.5vw;
+    font-weight: bolder;
+    overflow-y: hidden;
+}
+.title-text{
+   font-size: 1.5vw;
+   
+}
+.btn{
+    font-size: 2.5vw;
+    width: auto;
+    background-color: #393e46;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 2;
+}
+.title-arrow{
+    margin-left: 1.1rem;
+}
+.btn,.title-arrow:hover{
+    position: relative;
+    left: 10px;
+}
+
+/* FEATURES */
+
+.feature{
+    background-image:url("../images/home_pg/feautres/background-img.jpg");
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    margin-top: 0px;
+    color: white;
+}
+.box-left{
+    width: 80%;
+    /* margin-top:5vw; */
+    margin-left: 6.5vw;
+    text-align: left;
+    display: flex;   
+}
+.box-right{
+    width: 80%;
+    margin-top:5vw;
+    margin-left: 6.5vw;
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 10%;
+
+}
+.img1{
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+}
+.text-box{
+    /* padding-top: 5.2%; */
+    margin: 10% 0 0 0;
+    font-size: 1.2vw; 
+    line-height: 2;
+    /* padding-left: 14%; */
+   
+}
+.text-box h1{
+    padding-bottom: 2.5vw;
+}
+
+.text-box p{
+    font-size: 1.2rem;
+}
+
+/**Footer**/
+
+/**back-to-top*/
+.foot-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #912e88;
+    height: 5vw;
+}   
+.foot-top a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+}
+.foot-top a:hover{
+    text-decoration: underline;
+}
+.foot-top:hover{
+    background-color: #7e3a78;
+}
+
+/**footer-links**/
+.foot-link-box{
+    display: grid;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    padding: 40px 0px;
+
+    list-style-type: none;
+    line-height: 1.8rem;
+}
+.foot-link-box h5{
+    color: rgb(245, 218, 239);
+    font-weight: 700;
+}
+.foot-link-box a{
+    text-decoration: none;
+    margin-bottom:2rem;
+    color: white
+}
+.foot-link-box a:hover{
+    text-decoration-line: underline;
+}

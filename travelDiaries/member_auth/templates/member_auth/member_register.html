@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/member_auth/css/member_login.css">
+    <title>Register page</title>
+</head>
+<body class="bg" background="/static/title/title(1).jpg">
+    <header>
+        <img src="/static/logo/logo.png">
+        <h1>Travel Diaries</h1>
+    </header>
+    <main>
+        <form>
+            <div class="common login">
+                <b>Register</b><p>To continue to Travel Diaries</p>
+            </div>
+            <div class="common forms">
+                <label for=uname> Full name:</label>
+            </div>
+            <div class="common forms">
+                <input type=text name=fname id=fname placeholder="Enter your Full name">
+            </div>
+            <div class="common forms">
+                <label for=fname> Username:</label>
+            </div>
+            <div class="common forms">
+                <input type=text name=uname id=uname placeholder="Enter your Username">
+            </div>
+            <div class="common forms">
+                <label for=dob> Date of birth: </label>
+            </div>
+            <div>
+                <input type=date name=dob id=dob>
+            </div>
+            <div class="common forms">
+                <label for="cars">Gender:</label>
+                <select name="cars" id="gender">
+                    <option value="" disabled selected hidden>Choose a gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="rathernot">Rather not say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="common forms">
+                <label for=password> Password:  </label>
+            </div>
+            <div class="common forms">
+                <input type=password name=password id=password placeholder="Enter your password">
+            </div>
+            <div class="common forms">
+                <label for=cpassword> Confirm password:  </label>
+            </div>
+            <div class="common forms">
+                <input type=password name=cpassword id=cpassword placeholder="Confirm your password">
+            </div>
+            <div class="right">
+                <div></div>
+                <button type="submit"><a href="{% url "member-login" %}" class="co">Register</a></button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
