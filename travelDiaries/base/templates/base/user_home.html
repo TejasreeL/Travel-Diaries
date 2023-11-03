@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Interface</title>
+    <link href="/static/base/css/user_home.css" rel="stylesheet">
+  </head>
+  
+  <body background="/static/title/title(1).jpg" class="bg">
+    <nav>
+        <h2><ul>
+            <li><img src="/static/icons/user-circle.png" class="user">Person name</li>
+        </ul></h2>
+        <ul>
+            <li><a href="user_home.html"><img src="/static/icons/home_icon.png" class="user"></a></li>
+            <li><a href=#><img src="/static/icons/settings.png" class="user"></a></li>
+            <li><a href="home_pg.html"><img src="/static/logo/logo.png" width="35px"></a></li>
+        </ul>
+    </nav>
+    <main>
+      <div class="trips c1">
+        <h1>Trip History</h1>
+        <div class="history">
+          <div class="right1">
+            <img src="/static/icons/user-circle.png" class="individual">
+            <h3><b>Trip name</b></h3>
+            <img src="/static/icons/location.png" class="destination">
+            <p>Destination name</p>
+            <p>Status: </p>
+          </div>
+          <div class="right1">
+            <img src="/static/icons/memories_book.png" class="individuals">
+            <a href="trip_chat.html"><img src="/static/icons/chat.png" class="individuals"></a>
+          </div>
+        </div>
+        <div class="history">
+          <div class="right1">
+            <img src="/static/icons/user-circle.png" class="individual">
+            <h3><b>Trip name</b></h3>
+            <img src="/static/icons/location.png" class="destination">
+            <p>Destination name</p>
+            <p>Status: </p>
+          </div>
+          <div class="right1">
+            <img src="/static/icons/memories_book.png" class="individuals">
+            <a href="trip_chat.html"><img src="/static/icons/chat.png" class="individuals"></a>
+          </div>
+        </div>
+        <div class="history">
+          <div class="right1">
+            <img src="/static/icons/user-circle.png" class="individual">
+            <h3><b>Trip name</b></h3>
+            <img src="/static/icons/location.png" class="destination">
+            <p>Destination name</p>
+            <p>Status: </p>
+          </div>
+          <div class="right1">
+            <img src="/static/icons/memories_book.png" class="individuals">
+            <a href="trip_chat.html"><img src="/static/icons/chat.png" class="individuals"></a>
+          </div>
+        </div>
+        <div class="history">
+          <div class="right1">
+            <img src="/static/icons/user-circle.png" class="individual">
+            <h3><b>Trip name</b></h3>
+            <img src="/static/icons/location.png" class="destination">
+            <p>Destination name</p>
+            <p>Status: </p>
+          </div>
+          <div class="right1">
+            <img src="/static/icons/memories_book.png" class="individuals">
+            <a href="trip_chat.html"><img src="/static/icons/chat.png" class="individuals"></a>
+          </div>
+        </div>
+      </div>
+      <div class="trips">
+        <div class="options">
+          <div>  
+            <dialog id="myFirstDialog">  
+            <h2>Add Trip</h2>
+            <form>
+              <div class="forms">
+                <div>
+                  <label for=tripname> Trip name: </label><br>
+                  <input type=text name=tripname id=tripname>
+                </div>
+                <div>
+                  <label for="friends">Add friends:</label><br>
+                  <select name="friends" id="friends">
+                    <option value="" disabled selected hidden>Choose from friends</option>
+                  </select>
+                </div>
+              </div> <br>
+              <div class="forms">
+                <div>
+                  <label for=startloc> Starting location </label><br>
+                  <input type=text name=startloc id=startloc>
+                </div>
+                <div>
+                  <label for=destination> Destination </label><br>
+                  <input type=text name=destination id=destination>
+                </div>
+              </div> <br>
+              <div class="forms">
+                <div>
+                  <div><label for=dob> From date </label></div>
+                  <div><input type=date name=fromdate id=fromdate></div>
+                </div>
+                <div>
+                  <div><label for=dob> To date </label></div>
+                  <div><input type=date name=todate id=todate></div>
+                </div>
+              </div>
+            </form><br><br>
+            <div class="right">
+              <a href="trip_chat.html"><button>Add</button></a>
+              <button id="hide">Cancel</button>
+            </div>  
+            </dialog>  
+            <p id="show" class="sidebar">Add Trips</p>  
+            </div>              
+          <p class="sidebar">Friends</p>
+          <p class="sidebar">Dream Destinations</p>
+        </div>
+        <br>
+        <h3 class="schedule">Scheduled Trips</h3>
+        <div class="options">
+          <p class="sidebar"></p>
+          <p class="sidebar"></p>
+          <p class="sidebar"></p>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/JavaScript">  
+      (function() {    
+          var dialog = document.getElementById('myFirstDialog');    
+          document.getElementById('show').onclick = function() {    
+              dialog.show();    
+          };    
+          document.getElementById('hide').onclick = function() {    
+              dialog.close();    
+          };    
+      })();   
+      </script>  
+  </body>
+
+</html>

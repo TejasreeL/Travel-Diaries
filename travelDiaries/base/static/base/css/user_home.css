@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    text-align: center;
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(161, 96, 157);
+    background-image: linear-gradient(to right,#c34c76);
+    justify-content: space-between;
+    padding: 40px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.user{
+    float: left;
+    width: 35px;
+    margin-right: 10px;
+}
+
+main{
+    display: grid;
+    margin: 20px;
+    padding: 1px;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 90%;
+    margin-bottom: 10px;
+}
+  
+.trips{
+    border-radius: 10px;
+    padding: 20px;
+    background: rgb(161, 96, 157);
+}
+  
+.c1{
+    grid-column: 1/3;
+    text-align: justify;
+}
+
+h1{
+    display: block;
+    text-align: center;
+}
+
+.options{
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sidebar{
+    font-size: 18px;
+    margin: 10px;
+    background-color: #bbbbbb;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.schedule{
+    margin: 10px;
+    font-size: 22px;
+}
+
+dialog{
+    width: 70%;
+    margin-left: 15%;
+    background-color: rgba(221, 156, 216);
+    border: 2px solid;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+label{
+    font-size: 18px;
+    text-align: left;
+}
+
+input, select{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.right{
+    display: flex;
+    justify-content: right;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 20px;
+}
+
+button{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #8c00ff;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.history{
+    width: 92%;
+    padding: 10px;
+    margin: 2%;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.individual{
+    height: 100%;
+    float: left;
+    display: inline;
+    margin-right: 5%;
+}
+
+.individuals{
+    height: 100%;
+    float: right;
+}
+
+.right1{
+    width: 45%;
+}
+
+.destination{
+    float: left;
+    width: 15px;
+    margin-right: 3px;
+}

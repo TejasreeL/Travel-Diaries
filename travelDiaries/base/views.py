@@ -7,4 +7,6 @@ def landing_page(request):
 
 def contact_us(request):
     return render(request, 'base/contact_us.html')
-    
+
+def user_home(request):
+    return render(request, 'base/user_home.html')
