@@ -9,57 +9,64 @@
 <body class="bg" background="/static/title/title(1).jpg">
     <header>
         <img src="/static/logo/logo.png">
+        {%include 'message_render.html'%}
         <h1>Travel Diaries</h1>
     </header>
     <main>
-        <form>
+        <form action="\members\register_user" method='POST'>
             {% csrf_token %}
             <div class="common login">
                 <b>Register</b><p>To continue to Travel Diaries</p>
             </div>
             <div class="common forms">
-                <label for=uname> Full name:</label>
+                <label for='fname'> First name:</label>
             </div>
             <div class="common forms">
-                <input type=text name=fname id=fname placeholder="Enter your Full name">
+                <input type='text' name='fname' id='fname' placeholder="Enter your First name">
             </div>
             <div class="common forms">
-                <label for=fname> Username:</label>
+                <label for='lname'> Last name:</label>
             </div>
             <div class="common forms">
-                <input type=text name=uname id=uname placeholder="Enter your Username">
+                <input type='text' name='lname' id='lname' placeholder="Enter your Last name">
             </div>
             <div class="common forms">
-                <label for=dob> Date of birth: </label>
+                <label for='username'> Username:</label>
+            </div>
+            <div class="common forms">
+                <input type='text' name='username' id='username' placeholder="Enter your Username">
+            </div>
+            {% comment %} <div class="common forms">
+                <label for='dob'> Date of birth: </label>
             </div>
             <div>
-                <input type=date name=dob id=dob>
+                <input type='date' name='dob' id='dob'>
             </div>
             <div class="common forms">
-                <label for="cars">Gender:</label>
-                <select name="cars" id="gender">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
                     <option value="" disabled selected hidden>Choose a gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="rathernot">Rather not say</option>
                     <option value="other">Other</option>
                 </select>
+            </div> {% endcomment %}
+            <div class="common forms">
+                <label for='password'> Password:  </label>
             </div>
             <div class="common forms">
-                <label for=password> Password:  </label>
+                <input type='password' name='password' id='password' placeholder="Enter your password">
             </div>
             <div class="common forms">
-                <input type=password name=password id=password placeholder="Enter your password">
+                <label for='cpassword'> Confirm password:  </label>
             </div>
             <div class="common forms">
-                <label for=cpassword> Confirm password:  </label>
-            </div>
-            <div class="common forms">
-                <input type=password name=cpassword id=cpassword placeholder="Confirm your password">
+                <input type='password' name='cpassword' id='cpassword' placeholder="Confirm your password">
             </div>
             <div class="right">
                 <div></div>
-                <button type="submit"><a href="{% url "member-login" %}" class="co">Register</a></button>
+                <button type="submit"><class="co">Register</class=></button>
             </div>
         </form>
     </main>
