@@ -1,7 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 html {
@@ -19,19 +19,32 @@ body{
     /* background-color: rgba(246, 96, 149,0.8); */
     background-color: rgb(161, 96, 157);
     
-    background-image: linear-gradient(to right,#c34c76);
-    /* background-image: linear-gradient(to right,#c34c76, #f66095, #ffa9bc, #ffa9bc,); */
+    /* background-image: linear-gradient(to right,#c34c76); */
+    background-image: linear-gradient(to right,#c34c76, #f66095, #ffa9bc, #ffa9bc,);
     padding-left: 30.5vw;
     
 }
-
+a.nav-link.active{
+    color: white;
+}
+.active{
+    color: white;
+}
+.nav-item{
+    overflow-y: hidden;
+}
 .logo-img{
     background-image: url("/static/logo/logo.png");
     background-size: cover;
-    height: 6rem;
-    width: 8rem;
+    /* height: 6rem;
+    width: 8rem; */
     transition: transform 1s;
     transition-timing-function: ease-in-out;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    text-align: center;
+
 }
 
 .logo-img:hover{
@@ -81,12 +94,16 @@ body{
 a {
     text-decoration: none;
 }
+.container-fluid.title{
+    padding: 0px;
+    margin: 0px;
+}
 
 .title{
     /* text-align: center; */
     /* color: #393e46; */
     color: white;
-    padding: 0px;
+    /* padding: 0; */
 }
 .title-box{
     position: relative;
@@ -94,9 +111,10 @@ a {
     
 }
 .title-img{
-    opacity: 0.7;
+    /* opacity: 0.7; */
     width: 100%;
     height: auto;
+    background-size: cover;
     
 }
 .title-text{
@@ -113,6 +131,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    font-size: 2.5vw;
 }
 
 .title-heading{
@@ -120,17 +139,19 @@ a {
     font-weight: bolder;
     overflow-y: hidden;
 }
-.title-text{
-   font-size: 1.5vw;
-   
-}
+
 .btn{
-    font-size: 2.5vw;
+    font-size: 4.5vw;
     width: auto;
     background-color: #393e46;
+    /* background-color: cyan; */
     display: flex;
     justify-content: space-evenly;
     line-height: 2;
+}
+.button_text{
+    color: white;
+    font-weight: 600;
 }
 .title-arrow{
     margin-left: 1.1rem;
@@ -141,10 +162,14 @@ a {
 }
 
 /* FEATURES */
-
+section.container.feature{
+    padding: 0px;
+    margin: 0px;
+    max-width: max-content;
+}
 .feature{
-    background-image:url("../images/home_pg/feautres/background-img.jpg");
-    background-size: contain;
+    background-image:url("./../images/landing_pg/features/background-img.jpg");
+    background-size: cover;
     background-repeat: repeat-y;
     background-attachment: fixed;
     margin-top: 0px;
