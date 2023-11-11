@@ -27,6 +27,7 @@ body{
 
 .nav-item{
     overflow-y: hidden;
+}
 
 .logo-img{
     background-image: url("/static/logo/logo.png");
@@ -46,6 +47,8 @@ body{
     transform: rotateY(360deg);
 }
 
+
+
 .custom-link{
     /* color: rgb(102, 28, 86); */
     font-weight: 500;
@@ -64,24 +67,26 @@ body{
 .custom-btn{
     background-color:white;
     text-align: center;
-    border-radius: 10%;
-    margin-left: 100px;
+    border-radius: 10%;;
+    display: flex;
+    flex-direction: row-reverse;
 }
 .custom-btn a{
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.7vw;
+    font-size: 1.5vmax;
+    color: white !important;
 
 }
 .custom-btn:hover{
-    background-color: #393e46;
+    /* background-color: #393e46; */
     transition-duration: 80ms;
     transition-timing-function: ease-in-out;
     transition-property: all;    
 }
 .custom-btn a:hover{
     font-weight: 600;
-    color: aliceblue !important;
+    color:gray !important;
 }
 
 /* TITLE SECTION */
@@ -148,12 +153,17 @@ a {
     color: white;
     font-weight: 600;
 }
+.button_text :hover{
+    color: gray;
+    font-weight: 600;
+}
 .title-arrow{
     margin-left: 1.1rem;
 }
 .btn,.title-arrow:hover{
     position: relative;
     left: 10px;
+    color: #393e46;
 }
 
 /* FEATURES */
@@ -184,8 +194,6 @@ div.box-right.row{
     margin-top:5vw;
     margin-left: 6.5vw;
     text-align: left;
-    display: flex;
-    flex-direction: row-reverse;
     
 }
 .img-box{
