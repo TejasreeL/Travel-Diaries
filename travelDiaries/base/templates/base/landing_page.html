@@ -16,6 +16,24 @@
 
     <!-- bootstrap stylesheets -->
     <link
+      href="https:/<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home page</title>
+
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap stylesheets -->
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
@@ -23,14 +41,13 @@
     />
 
     <!-- CSS stylesheets -->
-    <link href="/static/base/css/landing_pg.css" rel="stylesheet" />
+    <link href='../../static/base/css/landing_pg.css' rel="stylesheet" />
   </head>
 
   <body>
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-fluid">
         <a href="#" class="logo-img navbar-brand"></a>
-
         <button
           class="navbar-toggler"
           type="button"
@@ -79,7 +96,7 @@
     <section class="container-fluid title">
       <div class="title-box">
         <img
-          src="/static/title/title(1).jpg"
+          src="../../../static/title/title(1).jpg"
           alt="title-img"
           class="title-img"
         />
@@ -91,7 +108,7 @@
           </p>
           <br />
           <button class="btn btn-dark btn-lg">
-            <a href="{% url "member-login" %}">Start Your Diary</a>
+            <a href="{% url "member-login" %}" class="button_text">Start Your Diary</a>
             <div class="title-arrow">
               <i class="fa-solid fa-arrow-right-long"></i>
             </div>
@@ -106,7 +123,7 @@
       <div class="box-left row" id="feature">
         <div class="col-lg-4 img-box">
           <img
-            src="/static/base/images/landing_pg/features/img1.jpg"
+            src="../../static/base/images/landing_pg/features/img1.jpg"
             alt="capture-life"
             class="img1"
           />

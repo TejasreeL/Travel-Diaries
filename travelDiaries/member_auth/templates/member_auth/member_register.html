@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="/static/member_auth/css/member_login.css">
     <title>Register page</title>
 </head>
-<body class="bg" background="/static/title/title(1).jpg">
-    <header>
-        <img src="/static/logo/logo.png">
-        {%include 'message_render.html'%}
+<body class="bg" background="../../../static/title/title(1).jpg">
+    <header class = "title_logo">
+        <img src="../../../static/logo/logo.png">
+        <!-- {%include 'message_render.html'%} -->
         <h1>Travel Diaries</h1>
     </header>
     <main>
         <form action="\members\register_user" method='POST'>
-            {% csrf_token %}
+            <!-- {% csrf_token %} -->
             <div class="common login">
                 <b>Register</b><p>To continue to Travel Diaries</p>
             </div>

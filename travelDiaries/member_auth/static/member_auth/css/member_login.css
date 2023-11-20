@@ -9,14 +9,14 @@ a {
   text-decoration: none;
 }
 
-  header{
+.title_logo{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
   
-  .bg{
+.bg{
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 20px;
@@ -24,20 +24,20 @@ a {
     color: #ffffff;
   }
   
-  img{
+img{
     height: 50px;
     width: 50px;
     border-radius: 50%;
     text-align: center;
   }
   
-  h1{
+h1{
     color: #ffffff;
     font-size: 44px;
     font-family: 'Poppins', sans-serif;
   }
   
-  form{
+form{
     margin: auto;
     background: #39393c;
     width: 25%;
@@ -46,7 +46,7 @@ a {
     border-radius: 10px;
   }
   
-  input, select{
+input, select{
     height: 20px;
     width: 90%;
     padding: 10px;
@@ -55,7 +55,7 @@ a {
     border-radius: 5px;
   }
   
-  .common{
+.common{
     margin: 8px;
     font-size: 16px;
   }
