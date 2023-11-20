@@ -1,163 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito:ital@1&family=Oxygen&family=Playpen+Sans:wght@300&family=Poppins&display=swap');
+
+* {
     padding: 0px;
     margin: 0px;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
 }
 
-body{
-    text-align: center;
+:root {
+    --primaryColor: rgb(161, 96, 157);
+    --primaryColor2: #fff;
+    --primaryColor3: rgb(0, 0, 0); 
+    --primaryFontsize: 1.5rem;
+    --primaryFont: 'Playpen Sans', cursive;
+    --secondayFont: 'Dancing Script', cursive;
+    --tertiaryFont:'Poppins', sans-serif;
+    --primaryFontWeight: 300;
+    --headingfontWeight: 600;
 }
 
-.bg{
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-  }
-  
-
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    background: rgb(161, 96, 157);
-    background-image: linear-gradient(to right,#c34c76);
-    justify-content: space-between;
-    padding: 40px;
+a {
+    text-decoration: none;
 }
 
-ul{
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
-    padding-right: 20px;
+body {
+    height: 100vh;
+    width: 100vw;
 }
 
-.user{
-    float: left;
-    width: 35px;
-    margin-right: 10px;
-}
-
-main{
-    display: grid;
-    margin: 20px;
-    padding: 1px;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 90%;
-    margin-bottom: 10px;
-}
-  
-.trips{
-    border-radius: 10px;
-    padding: 20px;
-    background: rgb(161, 96, 157);
-}
-  
-.c1{
-    grid-column: 1/3;
-    text-align: justify;
-}
-
-h1{
-    display: block;
-    text-align: center;
-}
-
-.options{
-    width: 90%;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.sidebar{
-    font-size: 18px;
-    margin: 10px;
-    background-color: #bbbbbb;
-    border-radius: 10px;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.schedule{
-    margin: 10px;
-    font-size: 22px;
-}
-
-dialog{
-    width: 70%;
-    margin-left: 15%;
-    background-color: rgba(221, 156, 216);
-    border: 2px solid;
-    padding: 1%;
-    border-radius: 20px;
-}
-
-.forms{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-label{
-    font-size: 18px;
-    text-align: left;
-}
-
-input, select{
+.main-container {
+    height: 100% ;
     width: 100%;
-    height: 50%;
-    border-radius: 10px;
+    background-image: url("/static/title/title(1).jpg");
+    background-size: cover;
 }
 
-.right{
+.user-nav {
+    width: 100%;
+    height: 10%;
+    background-color: var(--primaryColor);
     display: flex;
-    justify-content: right;
-    margin-left: 10%;
-    margin-right: 10%;
-    gap: 20px;
-}
-
-button{
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #8c00ff;
-    color: #ffffff;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.history{
-    width: 92%;
-    padding: 10px;
-    margin: 2%;
-    background: #ffffff;
-    border-radius: 10px;
-    display: flex;
+    padding: 0.5rem 2rem;
     justify-content: space-between;
 }
 
-.individual{
+
+
+.greeting-placeholder {
+    font-size: var(--primaryFontsize);
+    font-family: var(--primaryFont);
+    font-weight: var(--headingfontWeight);
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+
+
+}
+
+.tdiary-logo {
+    margin-right: 1rem;
+}
+
+.tdiary-logo img {
+    /* border: 2px solid black; */
     height: 100%;
-    float: left;
-    display: inline;
-    margin-right: 5%;
+    width: 100%;
+    /* object-fit: contain; */
+
 }
 
-.individuals{
+
+
+.user-navmenu {
+    display: flex;
     height: 100%;
-    float: right;
+    width: 10%;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    align-items: center;
 }
 
-.right1{
-    width: 45%;
+.nav-text {
+    font-family: var(--primaryFont);
+    font-size: var(--primaryFontsize);
+    font-weight: var(--primaryFontWeight);
 }
 
-.destination{
-    float: left;
-    width: 15px;
-    margin-right: 3px;
+.nav-text:hover {
+    cursor: pointer;
 }
+
+.fa-gear {
+    font-family: var(--primaryFont);
+    font-size: var(--primaryFontsize); 
+}
+
+.fa-gear:hover {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.user-workspace {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    
+}
+
+.past-diaries {
+    height: 90%;
+    width: 80%;
+    /* border: 2px dashed white; */
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.past-diaries ul {
+    list-style: none;
+}
+
+.user-options {
+    margin: 1rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user-addPage {
+    font-size: 2rem;
+    font-family: var(--primaryFont);
+    font-weight: var(--primaryFontWeight);
+}
+
+.in-progress-diaries {
+    border: 2px solid white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primaryFont);
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.p-text {
+    color: var(--primaryColor2);
+    font-family: var(--primaryFont);
+    font-size: var(--primaryFontsize);
+    font-weight: var(--primaryFontWeight);
+}
+
+.diary-container {
+    margin-top: 2rem;
+    display: flex;
+    column-gap: 1rem;
+    font-family: var(--primaryFont);
+}
+
+/* .test-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 150px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+      
+.test-text {
+text-align: center;
+margin: 10px;
+font-family: var(--primaryFont);
+} */
