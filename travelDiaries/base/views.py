@@ -13,7 +13,8 @@ def contact_us(request):
 def user_home(request):
     if request.user.is_authenticated:
         diaries = Diary.objects.all()[:4]
-        user_diaries = [diary for diary in diaries if request.user in diary.users.all()]
+        # user_diaries = [diary for diary in diaries if request.user in diary.users.all()]
+        user_diaries = request.user.diary_set.all()
         pending_diaries = [diary for diary in user_diaries if diary.is_complete is False][:4]
 
         context = {

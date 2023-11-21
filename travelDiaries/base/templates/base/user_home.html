@@ -21,7 +21,7 @@
   
         <div class="greeting-placeholder">
           <div class="tdiary-logo">
-            <img src="/static/logo/logo.png" alt="">;
+            <img src="/static/logo/logo.png" alt="">
           </div>
           <p>{{request.user.first_name}}'s Personal Corner</p>
         </div>
@@ -35,7 +35,7 @@
         <div class="past-diaries">
           <p class="p-text" style="font-weight: 600; font-size: 2rem;">My Diaries</p>
           <div class="diary-container">
-            {%for diary in user_diaries%}
+          {%for diary in user_diaries%}
           <div class="card">
             <h5 class="card-header">{{diary}}</h5>
             <div class="card-body">
@@ -47,7 +47,7 @@
 
             </div>
           </div>
-          {%endfor%}
+          {%endfor%} 
           </div>
           
         </div>
@@ -59,7 +59,7 @@
             {%for diary in pending_diaries%}
             <button type="button" class="btn btn-light btn-lg">{{diary}}</button>
             {%endfor%}
-            {%else%}
+            {%else%} 
             <button type="button" class="btn btn-light btn-lg">No item</button>
             {%endif%}
           </div>
