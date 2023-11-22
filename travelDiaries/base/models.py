@@ -3,7 +3,8 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Diary(models.Model):
-    diary_name = models.CharField("Diary",max_length= 100)
+    diary_name = models.CharField("Diary",max_length= 100, unique=True)
+    author = models.CharField("Author",max_length= 100, null=True)
     users = models.ManyToManyField(User)
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)
