@@ -40,13 +40,14 @@ def convertDate(date: str) -> str:
     return corr_date
 
 def add_diary(request):
+    
     diary_name = request.POST.get('diary_name')
-    # print("AAAAAAA", request.POST.get('start_date'))
-    # start_date = convertDate(request.POST.get('start_date'))
-    # end_date = convertDate(request.POST.get('end_date'))
     desc = request.POST.get('desc')
     destination = request.POST.get('destination')
-    usernames = request.POST.get('authors')
+    user1 = request.POST.get('author1')
+    user2 = request.POST.get('author2')
+    user3 = request.POST.get('author3')
+    user4 = request.POST.get('author4')
     author = request.user.username
     new_diary = Diary()
 
@@ -60,17 +61,45 @@ def add_diary(request):
     
     try:
         new_diary.save()
+        # new_diary.users.add(request.user)
+        for username in [user1, user2, user3, user4]:
+            try:
+                if username != "None":
+                    print("username is", username)
+                    user = User.objects.get(username=username)
+                    new_diary.users.add(user)
+            except:
+                print(username)
+                messages.success(request, "One of the authors doesn't exist")
+                return redirect('user-home')
+        # usernames = [username.strip() for username in request.POST.getlist('authors') if username != None]
+
+        # users = User.objects.filter(username__in=usernames)
+
+        # Print statements for debugging
+        # print('usernames:', usernames)
+        # print('matching users:', users)
+
+        
+
+        # Adding other selected users
+        # new_diary.users.add(*users)
+
+        messages.success(request, "Diary Successfully Created!")
+        return redirect('user-home')
 
     except IntegrityError:
         messages.success(request, "Diary name already exists!")
         return redirect('user-home')
 
-# __in a kind of query in django 
-    users = User.objects.filter(username__in=usernames)
 
-    new_diary.users.set(users)
+def my_diary(request, d_id):
+    my_diary = Diary.objects.get(id= d_id)
 
-    new_diary.save()
+    context = {"my_diary": my_diary}
 
-    messages.success(request, "Diary Successfully Created!")
-    return redirect('user-home')
+    return render(request, 'base/my_diary.html', context)
+
+
+
+

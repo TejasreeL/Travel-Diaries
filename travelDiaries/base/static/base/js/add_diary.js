@@ -62,11 +62,9 @@ async function postData(url, formData) {
             throw new Error('Network response was not ok');
         }
 
-        // Assuming the server returns HTML content in the response
         const htmlContent = await response.text();
         console.log(htmlContent);
 
-        // Inject the HTML content into the current page
         document.body.innerHTML = htmlContent;
 
     } catch (error) {
@@ -79,14 +77,11 @@ async function postData(url, formData) {
 function submitForms() {
     var form1Data = new FormData(document.getElementById('form1'));
 
-    var users = [
-        username,
-        document.getElementById('user2').value,
-        document.getElementById('user3').value,
-        document.getElementById('user4').value
-    ];
-
-    form1Data.append('authors', JSON.stringify(users));
+    form1Data.append('author1', username);
+    form1Data.append('author2', document.getElementById('user2').value);
+    form1Data.append('author3', document.getElementById('user3').value);
+    form1Data.append('author4', document.getElementById('user4').value);
+    console.log(form1Data);
     postData('user-home/add-diary', form1Data);
 
 }
